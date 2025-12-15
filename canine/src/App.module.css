@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
 }
-
+ 
 body {
   width: 100%;
   height: 100%;
@@ -98,12 +98,11 @@ body {
 
 /*Botones de cambio de paginas*/
 .Div_Selection {
-  width: 100%;
+  width: auto;
   height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
 }
 .Div_Selection button {
   width: auto;
@@ -111,16 +110,11 @@ body {
   padding: 10px;
   font-size: 14px;
   font-weight: 550;
-  border-radius: 5px;
+
   border: 1px solid grey;
   cursor: pointer;
 
   transition: 0.3s ease-in-out;
-}
-.Div_Selection button:hover {
-  background: #a67b5b;
-  color: white;
-  transform: scale(1.1);
 }
 
 /*Second page*/
@@ -132,7 +126,7 @@ body {
   justify-content: center;
   gap: 15px;
   flex-direction: column;
- flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 table {
   width: 100%;
@@ -142,7 +136,7 @@ table {
 table,
 td,
 th {
-    text-align: center;
+  text-align: center;
   border-bottom: 1px solid gainsboro;
 }
 td,
@@ -198,57 +192,55 @@ table tbody img {
   display: flex;
   align-items: center;
   justify-content: center;
- 
 }
-.Dialog .Div_Up_Info{
+.Dialog .Div_Up_Info {
   width: 450px;
- 
-height: 150px;
-padding: 20px;
- display: flex;
- align-items: center;
- justify-content: center;
- flex-direction: column;
-    position: fixed;
-    background: white;
-    gap: 15px;
-    padding: 20px;
-    border-radius: 7px;
-    box-shadow: 10px 10px 10px 10px gainsboro;
+
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  background: white;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 7px;
+  box-shadow: 10px 10px 10px 10px gainsboro;
 }
-.Dialog .Div_Up_Info input{
-width: 70%;
-height: auto;
-padding: 15px;
+.Dialog .Div_Up_Info input {
+  width: 70%;
+  height: auto;
+  padding: 15px;
 }
-.Div_Buttons{
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    align-items: center;
-    justify-content: center;
-   
+.Div_Buttons {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
 }
-.Div_Buttons button{
-    width:auto;
-    height: auto;
-    padding: 10px;
-    font-size: 15px;
-    padding: 10px;
-    font-weight: 500;
-    border-radius: 5px;
-    border: 1px solid gray;
-cursor: pointer;
+.Div_Buttons button {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  font-size: 15px;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid gray;
+  cursor: pointer;
 }
-.Div_Buttons button:nth-child(1){
-    background: green;
-    color: white;
+.Div_Buttons button:nth-child(1) {
+  background: green;
+  color: white;
 }
-.Div_Buttons button:nth-child(2){
-    background: red;
-    color: white;
+.Div_Buttons button:nth-child(2) {
+  background: red;
+  color: white;
 }
 @media (max-width: 599px) {
   .Div_Container {
@@ -258,34 +250,30 @@ cursor: pointer;
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    
   }
   table {
-  width: auto;
-  height: auto;
-  border-collapse: collapse;
-}
-.Div_Buscar input {
-  width: auto;
-  height: auto;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid grey;
-}
- 
-td {
-  font-size: 14px;
+    width: auto;
+    height: auto;
+    border-collapse: collapse;
+  }
+  .Div_Buscar input {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+
+  td {
+    font-size: 14px;
+  }
+
+  th {
+    font-size: 15px;
+  }
 }
 
-th {
-  font-size: 15px;
-}
-}
-
- 
- 
-
-@media  (min-width: 1023px) {
+@media (min-width: 1023px) {
   .Div_Container {
     width: auto;
     height: auto;
@@ -295,25 +283,35 @@ th {
     align-items: center;
     gap: 15px;
   }
-    table {
-  width: auto;
-  height: auto;
-  border-collapse: collapse;
-}
-.Div_Buscar input {
-  width: auto;
-  height: auto;
-  padding: 15px;
-  border-radius: 5px;
-  border: 1px solid grey;
-}
-td {
-  font-size: 14px;
+  table {
+    width: auto;
+    height: auto;
+    border-collapse: collapse;
+  }
+  .Div_Buscar input {
+    width: auto;
+    height: auto;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid grey;
+  }
+  td {
+    font-size: 14px;
+  }
+
+  th {
+    font-size: 15px;
+  }
 }
 
-th {
-  font-size: 15px;
-}
-}
 
- 
+.num1 {
+  background-color: hsl(207 86% 68%);
+  color: black;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.num2 {
+  background-color: hsl(0 0% 92%);
+  color: hsl(210 10% 12%);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+} 

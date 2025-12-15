@@ -130,7 +130,7 @@ function Search({ dogs, setDogs }) {
             ))
           ) : (
             <tr>
-              <td>
+              <td className={{Styles:"text-aling"}}>
                 No hay datos
               </td>
             </tr>
